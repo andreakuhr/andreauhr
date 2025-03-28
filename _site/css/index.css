@@ -127,6 +127,7 @@ body {
   font-family: "Anonymous Pro", monospace;
   font-weight: 200;
   line-height: 1.4;
+  background-color: #fcf6f6;
 }
 
 .container {
@@ -370,9 +371,12 @@ main h1 .tag {
   text-align: right;
 }
 
-.youtube-video {
-  aspect-ratio: 16 / 9;
-  width: 100%;
+.img-about-me {
+  border: 0.5px solid #2c2622;
+  float: left;
+  margin: 0 40px 24px 0;
+  padding: 16px;
+  width: 50%;
 }
 
 .img-notes {
@@ -384,37 +388,6 @@ main h1 .tag {
   padding-left: 50px;
   min-height: 38px;
   background: transparent no-repeat 0 0;
-}
-
-.number-01 {
-  background-image: url("/img/01.svg");
-}
-.number-02 {
-  background-image: url("/img/02.svg");
-}
-.number-03 {
-  background-image: url("/img/03.svg");
-}
-.number-04 {
-  background-image: url("/img/04.svg");
-}
-.number-05 {
-  background-image: url("/img/05.svg");
-}
-.number-06 {
-  background-image: url("/img/06.svg");
-}
-.number-07 {
-  background-image: url("/img/07.svg");
-}
-.number-08 {
-  background-image: url("/img/08.svg");
-}
-.number-09 {
-  background-image: url("/img/09.svg");
-}
-.number-10 {
-  background-image: url("/img/10.svg");
 }
 
 .entry-tags {

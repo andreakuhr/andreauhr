@@ -1,0 +1,36 @@
+---
+layout: base.njk
+---
+<article class="entry" data-pagefind-body>
+  <h1 class="entry-title">{{ title }}</h1>
+
+  <time datetime="{{ page.date | htmlDateString }}" class="entry-date">{{ page.date | readableDate }}</time>
+
+  <div class="entry-content">
+    {{ content | safe }}
+  </div>
+
+  {# <div class="entry-tags">
+    Tagged 
+    {%- for tag in tags | filterTagList %}
+    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <span class="entry-tag"><a href="{{ tagUrl | url }}">{{ tag }}</a></span>
+    {%- endfor %}
+  </div> #}
+</article>
+
+<div class="pagination">
+  {%- if collections.posts %}
+  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {%- if nextPost or previousPost %}
+
+  {%- if nextPost %}
+    <a href="{{ nextPost.url | url }}" class="pagination-newer">{{ nextPost.data.title }}</a>
+  {% endif %}
+  {%- if previousPost %}
+    <a href="{{ previousPost.url | url }}" class="pagination-older">{{ previousPost.data.title }}</a>
+  {% endif %}
+  {%- endif %}
+  {%- endif %}
+</div>

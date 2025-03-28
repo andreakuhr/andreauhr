@@ -1,8 +1,19 @@
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+
+  eleventyConfig.addCollection("posts", (collection) => {
+    return collection.getFilteredByTag("post").sort((a, b) => {
+      return b.date - a.date; // Sort by date (most recent first)
+    });
+  });
+
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
@@ -10,8 +21,12 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+  });
+
   // markdown for excerpt
-  eleventyConfig.addFilter("md2", function (content = "") {
+  eleventyConfig.addFilter("md", function (content = "") {
     return markdownIt({ html: true }).render(content);
   });
 
@@ -25,6 +40,11 @@ module.exports = function (eleventyConfig) {
       strict: true,
       remove: /['"“”‘’@*()%$#:.,!?+=]/g,
     });
+  });
+
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
   return {

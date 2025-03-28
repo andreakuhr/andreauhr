@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+
+    <meta name="generator" content="{{ eleventy.generator }}">
+
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    {# <link rel="shortcut icon" href='/img/pizza-icon.png'> #}
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+
+    <meta property="og:type" content="website">
+    <meta content="{{ description or metadata.description }}" property="og:description">
+    <meta content="https://andreauhr.com{{ page.url | url }}" property="og:url">
+    <meta content="https://andreauhr.com{{ page.url | url }}" property="twitter:url">
+    <meta content="{{ title or metadata.title }}" name="twitter:title" property="og:title">
+    {% if og %}
+      <meta content="https://andreauhr.com/img/_og/{{ og }}" property="og:image">
+      <meta content="https://andreauhr.com/img/_og/{{ og }}" name="twitter:image">
+    {% else %}
+      <meta content="https://andreauhr.com/img/_og/og-blog.jpg" property="og:image">
+      <meta content="https://andreauhr.com/img/_og/og-blog.jpg" name="twitter:image">
+    {% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header-main">
+        <nav>
+          <a href="{{ '/' | url }}" class="home">{{ metadata.title }}</a>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="https://github.com/andreakuhr">Github</a>
+          <a href="/feed">RSS</a>
+        </nav>
+      </header>
+
+      <main>
+        {{ content | safe }}
+      </main>
+      <aside>
+        <hr>
+        <p><a href="/search/">Search</a> or browse posts by <a href="/tags/">tags</a>.</p>
+      </aside>
+    </div>
+
+    <!-- Current page: {{ page.url | url }} -->
+    <script data-goatcounter="https://andreauhr.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  </body>
+</html>

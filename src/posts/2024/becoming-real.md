@@ -2,7 +2,9 @@
 title: Becoming Real
 date: 2024-10-09
 layout: post.njk
-tags: post
+tags:
+  - post
+  - life
 ---
 
 It’s been awhile since I’ve written anything for anyone other than myself. I have tens of unpublished essays in my Medium drafts from the last several years—some of them are not bad. But reading through them in the wee hour of a sleepless night, I quickly realized why I never published them.

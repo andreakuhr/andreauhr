@@ -1,11 +1,13 @@
 ---
-title: Momstyle?
+title: What is Momstyle?
 date: 2025-03-20
 layout: post.njk
-tags: post
+tags:
+  - post
+  - sustainability
+  - motherhood
+  - style
 ---
-
-<img src="/img/andrea_bb_carrier.jpg" alt="andrea with baby noah">
 
 This year, I’ve been on a mission to buy fewer clothes.
 

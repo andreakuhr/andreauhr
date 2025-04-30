@@ -2,7 +2,9 @@
 title: Wretched Dandelions
 date: 2019-09-26
 layout: post.njk
-tags: post
+tags:
+  - post
+  - life
 ---
 
 The clock edges closer to 3pm and I'm fighting the urge to give a two minute notice and walk out. I feel like my entire body has dry mouth as I'm wondering what he'll say. That I've disappointed him? That I put on an impressive show but the gig is up? Thank you for your time but we need someone who can think critically? I try to calm myself and collect my thoughts as I enter this meeting with my boss, still wondering what he'll say when he finds out I'm a garbage engineer.

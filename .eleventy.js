@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+//const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
@@ -14,6 +15,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(pluginRss);
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
@@ -45,6 +47,24 @@ module.exports = function (eleventyConfig) {
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  function filterTagList(tags) {
+    return (tags || []).filter(
+      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+    );
+  }
+
+  eleventyConfig.addFilter("filterTagList", filterTagList);
+
+  // Create an array of all tags
+  eleventyConfig.addCollection("tagList", function (collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach((item) => {
+      (item.data.tags || []).forEach((tag) => tagSet.add(tag));
+    });
+
+    return filterTagList([...tagSet]);
   });
 
   return {

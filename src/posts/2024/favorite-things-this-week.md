@@ -2,7 +2,9 @@
 title: Favorite Things This Week
 date: 2024-10-11
 layout: post.njk
-tags: post
+tags:
+  - post
+  - favorite things
 ---
 
 1. Day Date!

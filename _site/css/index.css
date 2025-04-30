@@ -206,6 +206,10 @@ aside a:hover {
   text-decoration: underline;
 }
 
+aside img {
+  padding: 20px;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -282,7 +286,7 @@ main h1 {
 
 main h1 .tag {
   color: var(--secondary-text);
-  font-weigh: 300;
+  font-weight: 300;
 }
 
 .entry-title a,

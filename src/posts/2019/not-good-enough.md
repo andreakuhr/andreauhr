@@ -2,7 +2,9 @@
 title: Not Good Enough
 date: 2019-01-31
 layout: post.njk
-tags: post
+tags:
+  - post
+  - life
 ---
 
 <p>I couldn't stop the hot tears from spilling out. I was in the seventh grade and the list for the members of the chamber choir had been posted outside of the choir director's office. I had practiced, I had auditioned, I had been waiting with anticipation for a whole week! As I frantically sought out my name, my heart fell as each inky black scribble on the sheet betrayed me. After reading the names of all my friends several times over it became clear through blurred tears: I was not good enough.</p>

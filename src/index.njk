@@ -17,13 +17,13 @@ permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1
         <div class="entry-content">
           {{ post.content | truncate(500) | safe }}
         </div>
-    {# <div class="entry-tags">
+    <div class="entry-tags">
       Tagged 
       {% for tag in post.data.tags | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
         <span class="entry-tag"><a href="{{ tagUrl | url }}">{{ tag }}</a></span>
       {% endfor %}
-    </div> #}
+    </div>
   </article>
 {% endfor %}
 

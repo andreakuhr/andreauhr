@@ -2,7 +2,9 @@
 title: An Ordinary Life
 date: 2019-01-11
 layout: post.njk
-tags: post
+tags:
+  - post
+  - life
 ---
 
 <p>99% of life happens in the ordinary.</p>

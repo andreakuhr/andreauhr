@@ -1,0 +1,21 @@
+{
+  "title": "Andrea Uhr",
+  "url": "https://andreauhr.com/",
+  "language": "en",
+  "description": "Andrea Uhr’s blog about life, motherhood, books, and more.",
+  "feed": {
+    "subtitle": "Andrea Uhr’s blog about life, motherhood, books, and more.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://andreauhr.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://andreauhr.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Andrea Uhr",
+    "email": "andreakbuhr@gmail.com",
+    "url": "https://andreauhr.com/about"
+  }
+}

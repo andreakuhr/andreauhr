@@ -1,3 +1,4 @@
+/* eslint-disable */
 html,
 body,
 div,
@@ -102,7 +103,7 @@ q::after {
   content: none;
 }
 :root {
-  --primary-text: #132730;
+  --primary-text: black;
   --secondary-text: slategrey;
   --link-text: mediumvioletred;
 }
@@ -116,11 +117,24 @@ body {
   font-family: "Anonymous Pro", monospace;
   font-weight: 200;
   line-height: 1.4;
+  background-color: #fff;
 }
 .container {
   margin: 0 auto;
-  display: grid;
   gap: 3em 90px;
+}
+.about-container {
+  margin: 0 auto;
+}
+@media screen and (max-width: 910px) {
+  .about-container {
+    max-width: 505px;
+  }
+}
+@media screen and (min-width: 911px) {
+  .about-container {
+    width: 855px;
+  }
 }
 @media screen and (max-width: 910px) {
   .container {
@@ -129,25 +143,20 @@ body {
 }
 @media screen and (min-width: 911px) {
   .container {
-    width: 855px;
+    width: 500px;
     grid-template-columns: 505px 1fr;
   }
 }
 .header-main {
-  grid-column: 1 / -1;
-}
-.header-main {
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid var(--primary-text);
+  padding-bottom: 2.5em;
   font-weight: 700;
+  text-transform: uppercase;
+  font-style: oblique;
 }
 .header-main nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1em;
-}
-.header-main .home {
-  margin-right: auto;
 }
 .header-main a {
   color: var(--primary-text);
@@ -159,6 +168,7 @@ body {
 aside * + *,
 main * + * {
   margin-top: 1.3em;
+  color: var(--primary-text);
 }
 .entry-content ul {
   padding-left: 1em;
@@ -167,9 +177,6 @@ main * + * {
 main li + li,
 aside li + li {
   margin-top: 0.3em;
-}
-aside {
-  font-size: 0.85em;
 }
 aside a {
   color: var(--link-text);
@@ -224,7 +231,8 @@ ol.numbered {
 }
 .entry,
 .postlist-item {
-  border-bottom: 1px dotted #ddd;
+  border: 1px solid #ddd;
+  padding: 20px;
 }
 .postlist-item {
   padding: 0.3em 0 0.6em;
@@ -234,13 +242,15 @@ ol.numbered {
 }
 .entry-title,
 main h1 {
-  font-size: 1.4em;
-  font-weight: 700;
+  font-size: 2.4em;
+  font-weight: 800;
   line-height: 1.2;
+  font-family: Literata;
+  letter-spacing: -1.37234px;
 }
 main h1 .tag {
   color: var(--secondary-text);
-  font-weigh: 300;
+  font-weight: 300;
 }
 .entry-title a,
 .postlist-link {
@@ -249,7 +259,8 @@ main h1 .tag {
 }
 .entry-title a:hover,
 .postlist-link:hover {
-  color: var(--link-text);
+  font-style: italic;
+  text-decoration: underline;
 }
 .postlist-link {
   font-size: 1.2em;
@@ -311,9 +322,12 @@ main h1 .tag {
 .footnotes.right {
   text-align: right;
 }
-.youtube-video {
-  aspect-ratio: 16 / 9;
-  width: 100%;
+.img-about-me {
+  border: 0.5px solid #2c2622;
+  float: left;
+  margin: 0 40px 24px 0;
+  padding: 16px;
+  width: 50%;
 }
 .img-notes {
   font-size: 12px;
@@ -323,36 +337,6 @@ main h1 .tag {
   padding-left: 50px;
   min-height: 38px;
   background: #fff0 no-repeat 0 0;
-}
-.number-01 {
-  background-image: url(/img/01.svg);
-}
-.number-02 {
-  background-image: url(/img/02.svg);
-}
-.number-03 {
-  background-image: url(/img/03.svg);
-}
-.number-04 {
-  background-image: url(/img/04.svg);
-}
-.number-05 {
-  background-image: url(/img/05.svg);
-}
-.number-06 {
-  background-image: url(/img/06.svg);
-}
-.number-07 {
-  background-image: url(/img/07.svg);
-}
-.number-08 {
-  background-image: url(/img/08.svg);
-}
-.number-09 {
-  background-image: url(/img/09.svg);
-}
-.number-10 {
-  background-image: url(/img/10.svg);
 }
 .entry-tags {
   margin-top: 3.2em;

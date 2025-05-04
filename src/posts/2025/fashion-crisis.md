@@ -1,5 +1,5 @@
 ---
-title: What is Momstyle?
+title: new motherhood + fashion crisis
 date: 2025-03-20
 layout: post.njk
 tags:
@@ -12,6 +12,8 @@ tags:
 This year, I’ve been on a mission to buy fewer clothes.
 
 I had an existential fashion crisis shortly after becoming a mom. It started before that actually, while I was pregnant—but I figured it was temporary and it would be over after he was here. But then I gave birth, and nothing went back to normal. Not only did I have a completely differently shaped body, but it had morphed to be entwined with another human—it had not been mine for quite some time and would not be for quite some time again. My hips were wide, my belly was still round, my boobs leaked with milk constantly. Everything hurt from contorting myself around this little human. Everything was electrified. I felt like I was in an alien body–one that looked and smelled weird. After the first few weeks, I was dying to get out of the gross postpartum pajama fit I had lived in and feel beautiful again. But what to wear? Nothing fit. Nothing in my closet made sense. My clothes suddenly needed function. But also form? Maternal but not matronly? Do I have style outside of being a mom? What even is style? Do I get to have one at this point or will they unearth me in these crusted pajamas?
+
+<img class="img-post" src="/img/andrea_bb_carrier.jpg" alt="andrea with baby noah">
 
 I decided to research and internet my way through this. I googled “hwat do new mpthjers sppsedf to wear” and was helpfully directed to fashion blogs. How to be a stylish, cozy mama. Oh, and they included links to their adorable and functional outfits so that I could buy them right there. And I could scroll on instagram too to see more choices! And some of them are sleep experts and offer courses…? I’ll spare writing about that mistake. To summarize a tedious story, I bought way too many clothes, for way too cheap, often in the wee hours of the early morning, and it didn’t solve my problem.
 

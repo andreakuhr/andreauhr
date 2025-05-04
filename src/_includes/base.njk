@@ -33,27 +33,27 @@
   </head>
 
   <body>
-    <div class="container">
+      <div class="container">
       <header class="header-main">
         <nav>
-          <a href="{{ '/' | url }}" class="home">Andrea Uhr</a>
           <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="https://github.com/andreakuhr">Github</a>
-          <a href="/feed">RSS</a>
+          {# <a href="/feed">RSS</a> #}
         </nav>
       </header>
 
       <main>
         {{ content | safe }}
       </main>
+       {# {% if page.url != '/about/' %}
       <aside>
-        <img src="/img/peonies.jpg" alt="peonies" class="img-peonies">
-        <p>placeholder text</p>
-        <p>Read more <a href="/about">about me</a></p>
+        <p>Creative outlet for an out of work software engineer.</p>
+        <p>Read more <a href="/about">about me!</a></p>
         <hr>
         <p><a href="/search/">Search</a> or browse posts by <a href="/tags/">tags</a>.</p>
       </aside>
+      {% endif %} #}
     </div>
 
     <!-- Current page: {{ page.url | url }} -->

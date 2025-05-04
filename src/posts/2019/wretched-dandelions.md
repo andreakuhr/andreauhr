@@ -1,5 +1,5 @@
 ---
-title: Wretched Dandelions
+title: wretched dandelions
 date: 2019-09-26
 layout: post.njk
 tags:

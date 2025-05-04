@@ -1,5 +1,5 @@
 ---
-title: Not Good Enough
+title: not good enough
 date: 2019-01-31
 layout: post.njk
 tags:

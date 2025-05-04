@@ -1,5 +1,5 @@
 ---
-title: An Ordinary Life
+title: an ordinary life
 date: 2019-01-11
 layout: post.njk
 tags:

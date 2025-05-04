@@ -1,5 +1,5 @@
 ---
-title: Becoming Real
+title: becoming real
 date: 2024-10-09
 layout: post.njk
 tags:

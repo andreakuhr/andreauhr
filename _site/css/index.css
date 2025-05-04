@@ -111,7 +111,7 @@ q::after {
 }
 
 :root {
-  --primary-text: #132730;
+  --primary-text: black;
   --secondary-text: slategrey;
   --link-text: mediumvioletred;
 }
@@ -127,15 +127,30 @@ body {
   font-family: "Anonymous Pro", monospace;
   font-weight: 200;
   line-height: 1.4;
-  background-color: #fcf6f6;
+  background-color: white;
 }
 
 .container {
   margin: 0 auto;
-  display: grid;
+  /* display: grid; */
   gap: 3em 90px;
 }
 
+.about-container {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 910px) {
+  .about-container {
+    max-width: 505px;
+  }
+}
+
+@media screen and (min-width: 911px) {
+  .about-container {
+    width: 855px;
+  }
+}
 @media screen and (max-width: 910px) {
   .container {
     max-width: 505px;
@@ -144,30 +159,31 @@ body {
 
 @media screen and (min-width: 911px) {
   .container {
-    width: 855px;
+    width: 500px;
     grid-template-columns: 505px 1fr;
   }
 }
 
-.header-main {
+/* .header-main {
   grid-column: 1 / -1;
-}
+} */
 
 .header-main {
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid var(--primary-text);
+  padding-bottom: 2.5em;
   font-weight: 700;
+  text-transform: uppercase;
+  font-style: oblique;
 }
 
 .header-main nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1em;
 }
 
-.header-main .home {
+/* .header-main .home {
   margin-right: auto;
-}
+} */
 
 .header-main a {
   color: var(--primary-text);
@@ -181,6 +197,7 @@ body {
 aside * + *,
 main * + * {
   margin-top: 1.3em;
+  color: var(--primary-text);
 }
 
 .entry-content ul {
@@ -193,9 +210,10 @@ aside li + li {
   margin-top: 0.3em;
 }
 
-aside {
+/* aside {
   font-size: 0.85em;
-}
+  color: var(--primary-text);
+} */
 
 aside a {
   color: var(--link-text);
@@ -206,9 +224,9 @@ aside a:hover {
   text-decoration: underline;
 }
 
-aside img {
+/* aside img {
   padding: 20px;
-}
+} */
 
 img {
   width: 100%;
@@ -266,7 +284,8 @@ ol.numbered {
 
 .entry,
 .postlist-item {
-  border-bottom: 1px dotted #ddd;
+  border: 1px solid #ddd;
+  padding: 20px;
 }
 
 .postlist-item {
@@ -279,9 +298,11 @@ ol.numbered {
 
 .entry-title,
 main h1 {
-  font-size: 1.4em;
-  font-weight: 700;
+  font-size: 2.4em;
+  font-weight: 800;
   line-height: 1.2;
+  font-family: Literata;
+  letter-spacing: -1.37234px;
 }
 
 main h1 .tag {
@@ -297,7 +318,8 @@ main h1 .tag {
 
 .entry-title a:hover,
 .postlist-link:hover {
-  color: var(--link-text);
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .postlist-link {

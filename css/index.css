@@ -461,38 +461,6 @@ main h1 .tag {
   text-decoration: underline;
 }
 
-.pagination-newer {
-  background: url("/img/blog-learn-more2.svg") no-repeat 0 50%;
-  background-size: 11px 15px;
-  padding-left: 20px;
-  grid-column: 1;
-  justify-self: start;
-}
-
-.pagination-older {
-  background: url("/img/blog-learn-more.svg") no-repeat 100% 50%;
-  background-size: 11px 15px;
-  padding-right: 20px;
-  grid-column: 2;
-  justify-self: end;
-  text-align: right;
-}
-
-.learn-more {
-  text-align: right;
-}
-
-.learn-more a {
-  background: url("/img/blog-learn-more.svg") no-repeat 100% 50%;
-  background-size: 11px 15px;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-.learn-more a:hover {
-  text-decoration: underline;
-}
-
 .clearfix::after {
   content: "";
   clear: both;
